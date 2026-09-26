@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts and Comments</title>
+
+    <!-- Tailwind CSS (loaded from the internet, no installation needed) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 text-slate-800">
+
+    <!-- Top banner -->
+    <header class="bg-indigo-600 py-10 text-white">
+        <div class="mx-auto max-w-3xl px-4">
+            <h1 class="text-3xl font-bold">Posts and Comments</h1>
+            <p class="mb-4 mt-1">Every post with the comments written on it.</p>
+
+            <!-- script.js puts the numbers (posts, comments) here -->
+            <div id="stats" class="flex gap-2"></div>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="mx-auto max-w-3xl px-4 py-8">
+
+        <!-- script.js puts all the posts here -->
+        <div id="posts" class="grid gap-5">
+            <p>Loading...</p>
+        </div>
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
